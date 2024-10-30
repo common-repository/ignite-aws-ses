@@ -1,0 +1,34 @@
+{
+  "name": "igniteonline/ignite-better-mail",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "A WordPress plugin which allows you to send emails via AWS SES or Mailtrap depending on your environment",
+  "homepage": "https://igniteonline.com.au",
+  "authors": [
+    {
+      "name": "Nicolo Sacchi",
+      "email": "nicolo.s@igniteonline.com.au",
+      "homepage": "https://igniteonline.com.au"
+    },
+    {
+      "name": "Milton Pena",
+      "email": "milton.p@igniteonline.com.au",
+      "homepage": "https://igniteonline.com.au"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "autoload": {
+    "psr-4": {
+      "IgniteOnline\\BetterMail\\": "BetterMail/",
+      "IgniteOnline\\Mailtrap\\": "Mailtrap/",
+      "IgniteOnline\\AWS\\": "AWS/"
+    }
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "~1.0",
+    "aws/aws-sdk-php": "^3.55"
+  }
+}
